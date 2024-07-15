@@ -1,0 +1,370 @@
+ion-header {
+    background-color: #008080;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  
+    ion-toolbar {
+      --background: transparent; 
+      --padding-start: 1.5vh;
+      --padding-end: 1.5vh;
+  
+      // ion-title {
+      //   font-size: medium;
+      //   text-align: center;
+      //   padding: 0;
+      //   margin: 0;
+      // }
+  
+      ion-button {
+        background: transparent;
+        --padding-start: 0;
+        --padding-end: 0;
+        --padding-top: 0;
+        --padding-bottom: 0;
+        --background: transparent;
+        --box-shadow: none; /* Elimina el borde del botón */
+        border: none; /* Asegúrate de que no haya borde */
+          img{
+            height: 20vh;
+            width: 20vh;
+        }
+      }
+  
+      ion-buttons {
+        --padding-start: 0;
+        --padding-end: 0;
+        --padding-top: 0;
+        --padding-bottom: 0;
+        --background: transparent;
+       
+  
+        ion-thumbnail {
+          background-color: white;
+          --border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          ion-icon {
+            font-size: 24px;
+          }
+        }
+      }
+      .custom-font {
+        font-family: Erica One;
+        font-size: 24px;
+        line-height: 15px;
+        text-align: left;
+        width: 268.73px;
+        font-weight: 800;
+        color: white;
+      }
+  
+    }
+  
+    ion-row.header-row {
+      align-items: center;
+  
+      .icon-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+  
+        .buttons-container {
+          display: flex;
+          gap: 10px; /* Ajusta el espacio entre los botones */
+  
+          ion-button {
+            --padding-start: 0;
+            --padding-end: 0;
+            --padding-top: 0;
+            --padding-bottom: 0;
+            --background: transparent;
+            --border-radius: 50%;
+            --box-shadow: none; /* Elimina el borde del botón */
+            border: none; /* Asegúrate de que no haya borde */
+  
+            ion-icon {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+  
+      ion-searchbar {
+        --background: white;
+        width: 640px;
+        ion-icon{
+          color: white;
+        }
+      }
+    }
+  
+    ion-icon {
+      color: white;
+    }
+  
+    ion-header ion-button {
+      color: white;
+    }
+  }
+  
+  /* Estilos específicos para iOS */
+  ion-searchbar.ios.custom {
+    --cancel-button-color: black;
+  }
+  
+  /* Estilos específicos para Material Design */
+  ion-searchbar.md.custom {
+    --cancel-button-color: #fff;
+  }
+  
+  
+  
+  ion-icon {
+    color: black;
+  }
+  
+  ion-header ion-button{
+    color:  white;
+  }
+  
+  /* Ajustar el color de fondo de la página */
+  body {
+    margin: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Estilos específicos para iOS */
+  ion-searchbar.ios.custom {
+    --cancel-button-color: black;
+  }
+  
+  /* Estilos específicos para Material Design */
+  ion-searchbar.md.custom {
+    --cancel-button-color: #fff;
+  }
+  
+  
+  
+  ion-icon {
+    color: black;
+  }
+  
+  ion-header ion-button{
+    color:  white;
+  }
+
+
+// CSS Perfil
+
+
+
+ion-grid {
+    padding: 8px;
+    color: black;
+    ion-col {
+        .right-text {
+            font-size: medium;
+            background: rgba(102, 162, 162, 1);
+            color: white;
+            p{
+                margin-bottom: 1rem;
+            }
+            
+            ion-card-title{
+                color: white;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            ion-icon {
+                text-align: left;
+            }
+
+            ion-button {
+                --background: white;
+                --indicator-color: #0E7A76;
+                --color: black;
+                --color-checked: black;
+                --border-radius: 20px;
+                width: 180px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2rem;
+            
+                ion-icon {
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+           
+            ion-text{
+                background: transparent;
+                color: white;
+                font-size: 20px;
+                ion-label{
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .left-text {
+            text-align: left;
+            font-size: medium;
+            background: rgba(102, 162, 162, 1);
+            
+            ion-icon {
+                text-align: left;
+                font-size: 24px;
+                color: white;
+            }
+            
+            ion-button {
+                --background: white;
+                --indicator-color: #0E7A76;
+                --color: black;
+                --color-checked: black;
+                --border-radius: 20px;
+                width: 180px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2rem;
+            }
+            
+            ion-text {
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20vh;
+            }
+            
+            ion-avatar.custom-avatar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px; /* Ajustar el tamaño según necesites */
+                height: 200px; /* Ajustar el tamaño según necesites */
+                margin: 0 auto 0px auto; /* Centrar el avatar horizontalmente y añadir margen inferior */
+                margin-top: 20px;
+            }
+
+            ion-avatar.custom-avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+                border-radius: 50%; /* Hace que la imagen sea circular */
+            }
+        }
+    }
+}
+
+
+
+ion-row.centro {
+    margin: 0vh;
+    
+    ion-segment {
+        --background: white;
+        
+        ion-segment-button {
+            margin: 10px;
+            --background: #66A2A2;
+            --indicator-color: #0E7A76;
+            --color: black;
+            --color-checked: white;
+            --border-radius: 5px;
+            
+            ion-label {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    ion-checkbox {
+        justify-content: flex-end;
+    }
+}
+
+ion-card {
+    background-color: #C9C9C9;
+    color: black;
+    
+    ion-row.desc {
+        margin: 0 2.5vh 1.5vh 2.5vh;
+        border-radius: 10px;
+        padding: 10px;
+        
+        ion-label {
+            font-size: 0.95rem;
+            font-weight: 800;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        ion-text {
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+    }
+}
+ion-header ion-button{
+    color:  white;
+  }
+
+
+  ion-footer {
+    background-color: #008080;
+    padding: 1em 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    font-size: smaller;
+    color: white;
+  
+  ion-title {
+    background-color: #008080;
+    margin: 0 auto;
+    font-size: x-small;
+    text-align: center;
+    color: white;
+  }
+  
+  ion-row{
+    background-color: #008080;
+      .left-text {
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: smaller;
+      }
+      .right-text {
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: smaller;
+    color: white;
+      }
+    
+  }
+  
+  
+  
+  ion-button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: smaller;
+    
+  }
+  }

@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="container">
+    <div class="right-section">
+      <h1>¡WELCOME TO <br>CIUDAD ACADEMIA!</h1>
+    </div>
+
+    <div class="left-section">
+      <h1>Create your account</h1>
+      <p>Join our community!</p>
+      <p><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;<ion-icon name="logo-google"></ion-icon></p>
+
+      <ion-item>
+        <ion-input placeholder="Username" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="E-mail" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Password" type="password"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="goToHome()">SIGN UP</ion-button>
+
+      <p class="register">Already have an account? <a [routerLink]="['/login']">Log in</a></p>
+    </div>
+  </div>
+</ion-content>
+

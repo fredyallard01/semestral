@@ -1,0 +1,205 @@
+<body>
+
+  <ion-content >
+  
+    <!-- HTML HEADER -->
+    <ion-header>
+      <ion-toolbar>
+  
+    <ion-row class="srch" class="header-row">
+      <ion-col size="1.5">
+        <ion-button [routerLink]="['/home']">
+        <img [src]="'assets/icon/LogoV2.png'"> 
+      </ion-button>
+      </ion-col>
+      <ion-col size="1.5">
+        <ion-label>
+          <ion-text class="custom-font">CIUDAD</ion-text><br>
+          <ion-text class="custom-font">ACADEMIA</ion-text>
+        </ion-label>
+      </ion-col>
+      <ion-col size="6">
+        <ion-searchbar
+          search-icon="search-circle-outline" show-cancel-button="focus" animated="true" placeholder="Search" class="custom">
+        </ion-searchbar>
+    </ion-col>
+  <ion-col size="2" class="icon-buttons">
+          <div class="buttons-container">
+            <ion-button>
+              <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+            </ion-button>
+            <ion-button>
+              <ion-icon name="notifications-outline"></ion-icon>
+            </ion-button>
+            <ion-button  [routerLink]="['/perfil']">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+      
+  <style>
+  /* Scoped components require higher specificity to customize */
+  ion-searchbar.custom {
+    --background: white;
+    --color: black;
+    --placeholder-color: black;
+    --icon-color: black;
+    --clear-button-color: black;
+    --border-radius: 30px;
+  }
+  
+  ion-searchbar.ios.custom {
+    --cancel-button-color: black;
+  }
+  
+  ion-searchbar.md.custom {
+    --cancel-button-color: black;
+  }
+  
+  </style>
+  </ion-toolbar>
+  </ion-header>
+
+  <!-- HTML CONTENIDO HOME -->
+<!-- Priemra Columna -->
+<ion-grid class="home">
+  <ion-row  class="ion-align-items-stretch">
+    <ion-col size="2.2" >
+      <ion-label>
+      <ion-card  class="left-text">
+      <ion-card-content>
+        <ion-button [routerLink]="['/home']">
+         <ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Home
+        </ion-button>
+        <br>
+        <ion-button>
+         <ion-icon name="trending-up-outline"></ion-icon> &nbsp;&nbsp;&nbsp; Popular
+        </ion-button>
+        <br>
+        <ion-button>
+        <ion-icon name="bulb-outline"></ion-icon> &nbsp;&nbsp;&nbsp; Posts Propios
+        </ion-button>
+        </ion-card-content>
+      </ion-card>
+      </ion-label>
+      <!-- Segunda sección Primera Columna -->
+      <ion-row>
+          <ion-label>
+            <ion-card class="left-text2">
+              <ion-card-content>
+                <ion-button>
+                  <ion-icon name="megaphone-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avisos
+                </ion-button>
+                <br>
+                  <ion-button>
+                    <ion-icon name="settings-outline"></ion-icon> &nbsp;&nbsp;&nbsp;&nbsp;Configuración
+                  </ion-button>
+                  <br>
+                <ion-button>
+                <ion-icon name="people-outline"></ion-icon> &nbsp;&nbsp;&nbsp; Comunidades
+                </ion-button>
+                <br>
+                <ion-button>
+                  <ion-icon name="moon-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Temas
+                </ion-button>
+                <br>
+                  <ion-button 
+                  [routerLink]="['/registro']">
+                  <ion-icon name="log-out-outline"></ion-icon> &nbsp;&nbsp;&nbsp;&nbsp;Log Out
+                  </ion-button>
+
+              </ion-card-content>
+            </ion-card>
+          </ion-label>
+      </ion-row>
+    </ion-col>
+
+    <!-- Segunda Columna -->
+    <ion-col size="7" class="content">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Profesor Dimas</ion-card-title>
+          <ion-card-subtitle>#Consejo #Apunte</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>
+            “La vida de un crítico es sencilla en muchos aspectos. Arriesgamos poco y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio. Prosperamos con las críticas negativas divertidas de escribir y de leer. Pero la triste verdad que debemos afrontar, es que en el gran orden de las cosas, cualquier basura tiene más significado que lo que deja ver nuestra crítica.
+
+Pero en ocasiones el crítico sí se arriesga cada vez que descubre y defiende algo nuevo. El mundo suele ser cruel con el nuevo talento. Las nuevas creaciones, lo nuevo, necesita amigos. Anoche, experimenté algo nuevo. Una extraordinaria cena de una fuente singular e inesperada. Decir solo que la programacion y su creador han desafiado mis prejuicios sobre la buenos programas, subestimaría la realidad. Me han tocado en lo más profundo.
+
+En el pasado, jamás oculté mi desdén por el famoso lema del Profesor Dimas «Cualquiera puede programar». Pero al fin, me doy cuenta de lo que quiso decir en realidad: No cualquiera puede convertirse en un gran artista, pero un gran artista puede provenir de cualquier lado.”
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+
+    <!-- Tercera Columna -->
+    <ion-col size="2.8" >
+      <ion-card  class="right-text">
+        <ion-card-content>
+          <ion-button [routerLink]="['/publicacion']">
+            <ion-icon name="add-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Crear
+           </ion-button>
+<br><br>
+      <ion-item>
+        <ion-select aria-label="Institución" interface="popover" placeholder="Institución...">
+          <ion-select-option value="opcion1">Universidad Tecnológica</ion-select-option>
+          <ion-select-option value="opcion2">Universidad Autónoma de Chiriquí</ion-select-option>
+          <ion-select-option value="opcion3">Universidad Latina</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+    
+  </ion-card>
+      <!-- Segunda Sección Tercera Columna -->
+      <ion-label>
+        <ion-card  class="right-text2">
+        <ion-card-content>
+          <ion-button>
+           <ion-icon name="arrow-forward-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Acerca Académico
+          </ion-button>
+          <br>
+          <ion-button>
+           <ion-icon name="reader-outline"></ion-icon> &nbsp;&nbsp;&nbsp;&nbsp;Anuncios
+          </ion-button>
+          <br>
+          <ion-button>
+          <ion-icon name="arrow-forward-outline"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;Política de Contenido
+          </ion-button>
+          <br>
+          <ion-button>
+          <ion-icon name="arrow-forward-outline"></ion-icon> &nbsp;&nbsp;&nbsp; Política de Privada
+          </ion-button>
+          </ion-card-content>
+        </ion-card>
+        </ion-label>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+<!-- HTML FOOTER -->
+
+<ion-footer >
+
+  <ion-title>©Todoslosderechosreservados</ion-title>
+<ion-row>
+  <ion-col size="6" class="left-text">
+    Contenido por decidir
+  </ion-col>
+  <ion-col size="6" class="right-text">
+    <ion-text>
+    ¿Estás teniendo problemas?<br>
+    Contacta al: +507 6421-0902<br><br>
+    ¿Tienes alguna sugerencia para nuestro foro?<br>
+  </ion-text>
+    <ion-button class="button-text">Presiona aquí y danos tu opinión del foro.</ion-button>
+  </ion-col>
+</ion-row>
+</ion-footer>
+</ion-content>
+
+
+</body>

@@ -1,0 +1,133 @@
+<body>
+<ion-content>
+<ion-header>
+  <ion-toolbar>
+
+<ion-row class="srch" class="header-row">
+  <ion-col size="1.5">
+    <ion-button [routerLink]="['/home']">
+      <img [src]="'assets/icon/LogoV2.png'"> 
+    </ion-button>
+  </ion-col>
+  <ion-col size="1.5">
+    <ion-label>
+      <ion-text class="custom-font">CIUDAD</ion-text><br>
+      <ion-text class="custom-font">ACADEMIA</ion-text>
+    </ion-label>
+  </ion-col>
+  <ion-col size="6">
+    <ion-searchbar
+      search-icon="search-circle-outline" show-cancel-button="focus" animated="true" placeholder="Search" class="custom">
+    </ion-searchbar>
+</ion-col>
+<ion-col size="2" class="icon-buttons">
+      <div class="buttons-container">
+        <ion-button>
+          <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon name="notifications-outline"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+  
+<style>
+/* Scoped components require higher specificity to customize */
+ion-searchbar.custom {
+--background: white;
+--color: black;
+--placeholder-color: black;
+--icon-color: black;
+--clear-button-color: black;
+--border-radius: 30px;
+}
+
+ion-searchbar.ios.custom {
+--cancel-button-color: black;
+}
+
+ion-searchbar.md.custom {
+--cancel-button-color: black;
+}
+
+</style>
+</ion-toolbar>
+</ion-header>
+
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-card class="left-text">
+          <ion-avatar class="custom-avatar">
+            <img src="assets/avatar/AvatarBleach.png" alt="Avatar" />
+          </ion-avatar>
+          <ion-card-content>
+            <ion-text class="centered-text">*Nombre del usuario*</ion-text>
+            <ion-button expand="block">*Universidad*</ion-button>
+            <ion-button expand="block">*Carrera*</ion-button>
+            <ion-button expand="block">*Cambiar Usuario*</ion-button>
+            <br><br><br>
+            <ion-button expand="block" [routerLink]="['/registro']">Cerrar Sesión</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="7">
+        <ion-card class="right-text">
+          <ion-card-header>
+            <ion-card-title>DETALLES DE CONTACTO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Correo:</p>
+            <p>Teléfono:</p>
+            <ion-card-title>CONFIGURACIÓN DE PERFIL</ion-card-title>
+            <ion-text>
+              <ion-label>Género</ion-label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <ion-button >Masculino</ion-button>
+            </ion-text>
+            <br><br><br>
+            <ion-text>
+              <ion-label>Ubicación</ion-label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <ion-button >Cambiar Ubicación</ion-button>
+            </ion-text>
+            <br><br><br>
+            <ion-text>
+              <ion-label>Contraseña</ion-label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <ion-button >Cambiar Contraseña</ion-button>
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+<!-- HTML FOOTER -->
+
+<ion-footer >
+
+  <ion-title>©Todoslosderechosreservados</ion-title>
+<ion-row>
+  <ion-col size="6" class="left-text">
+    Contenido por decidir
+  </ion-col>
+  <ion-col size="6" class="right-text">
+    <ion-text>
+    ¿Estás teniendo problemas?<br>
+    Contacta al: +507 6421-0902<br><br>
+    ¿Tienes alguna sugerencia para nuestro foro?<br>
+  </ion-text>
+    <ion-button class="button-text">Presiona aquí y danos tu opinión del foro.</ion-button>
+  </ion-col>
+</ion-row>
+</ion-footer>
+</ion-content>
+
+
+</body>
+<!-- Script para manejar el scroll -->

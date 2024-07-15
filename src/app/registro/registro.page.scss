@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.left-section {
+  flex: 1;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+  p{
+    text-align: center;
+  }
+}
+
+.right-section {
+  flex: 1;
+  background-color: #00796b; /* Cambiado al color deseado */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  h1{
+  font-size: 60px;
+  
+  }
+}
+
+
+h1, h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.left-section p, .right-section p {
+  margin: 1rem 0;
+}
+
+ion-item {
+  margin-bottom: 1rem;
+  background: gray;
+  color: black;
+  font-weight: bold;
+  width: 300px;
+  border-color: gray;
+  border-style:groove;
+  border-width: 2px;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+ion-button {
+  --background: #00796b;
+  --indicator-color: #0E7A76;
+  --color: white;
+  --color-checked: black;
+  --border-radius: 20px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.register {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+ion-icon{
+  font-size: 24px;
+}

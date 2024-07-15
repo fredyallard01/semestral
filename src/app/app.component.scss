@@ -1,0 +1,21 @@
+.header{
+    background-color: #008080;
+  }
+ 
+  /* app.component.scss o global.scss */
+ion-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  app-header, app-main-buttons {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  

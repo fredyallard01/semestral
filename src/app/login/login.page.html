@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="container">
+    <div class="left-section">
+      <h1>Log In</h1>
+      <p>Use your username or email linked to log in</p>
+
+      <ion-item>
+        <ion-input placeholder="E-mail" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Password" type="password"></ion-input>
+      </ion-item>
+      <p class="forgot-password">Forgot your password?</p>
+
+      <div class="social-login">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-google"></ion-icon>
+      </div>
+      <br>
+      <ion-button expand="block" [routerLink]="['/home']">Log in</ion-button>
+
+      <p class="register">don't have an account? <a href="/registro">register here</a></p>
+    </div>
+
+    <div class="right-section">
+      <h1>¡WELCOME TO <br>CIUDAD ACADEMIA!</h1>
+    </div>
+  </div>
+</ion-content>
